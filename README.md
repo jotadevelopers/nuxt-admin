@@ -2,24 +2,24 @@
 
 Based on NuxtJs and Nuxt UI, carefully crafted and ready for production
 
-# Introduction
+## Introduction
 
-# Installation
+## Installation
 
-# What's Included
+## What's Included
 
-# Premium Version
+## Premium Version
 
-# Documentation
+## Documentation
 
-# Browser Support
+## Browser Support
 
-# Contributing
+## Contributing
 
-# Change Logs
+## Change Logs
 
-# Support
+## Support
 
-# License
+## License
 
-# Useful Links
+## Useful Links
