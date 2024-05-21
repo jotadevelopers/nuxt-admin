@@ -1,23 +1,21 @@
 <template>
     <header
-        class="fixed top-0 right-0 left-0 w-full flex justify-between items-center text-white p-2 h-14 shadow-md bg-white border-b-[0.5] border-gray-100">
+        class="fixed top-0 right-0 left-0 w-full flex bg-blue-600 justify-between items-center text-white p-2 h-14 shadow-md bg-white border-b-[0.5] border-gray-100">
         <div class="flex items-center gap-2">
-            <img src="@/assets/logo.png" alt="Logo" class="h-8 mr-4" />
-            <input type="text" class="h-8 px-2 rounded border-none" placeholder="Search" />
+            <img src="@/assets/logo.png" alt="Logo" class="h-8" />
+            <h1 class="font-medium">Uno Admin</h1>
         </div>
-        <div class="flex">
-            <nav>
-                <ul class="flex space-x-4">
-                    <li><a href="#" class="hover:underline">Mail</a></li>
-                    <li><a href="#" class="hover:underline">Calendar</a></li>
-                    <li><a href="#" class="hover:underline">People</a></li>
-                    <li><a href="#" class="hover:underline">Files</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="flex items-center">
-            <button class="bg-transparent border-none text-white mx-2 hover:underline">Settings</button>
-            <button class="bg-transparent border-none text-white mx-2 hover:underline">Help</button>
+
+        <div class="flex items-center gap-1">
+            <UButton variant="ghost" square
+                :ui="{ rounded: 'rounded-full', color: { white: { ghost: 'hover:bg-blue-700 text-white' } } }"
+                icon="i-heroicons-magnifying-glass-16-solid" color="white"></UButton>
+            <UButton variant="ghost" square
+                :ui="{ rounded: 'rounded-full', color: { white: { ghost: 'hover:bg-blue-700 text-white' } } }"
+                icon="i-heroicons-cog-8-tooth-16-solid" color="white"></UButton>
+            <UButton variant="ghost" square
+                :ui="{ rounded: 'rounded-full', color: { white: { ghost: 'hover:bg-blue-700 text-white' } } }"
+                icon="i-heroicons-question-mark-circle" color="white"></UButton>
             <img src="@/assets/user-avatar.png" alt="User Avatar" class="h-8 w-8 rounded-full ml-4" />
         </div>
     </header>

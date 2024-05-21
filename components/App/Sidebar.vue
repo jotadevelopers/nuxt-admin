@@ -1,14 +1,17 @@
 <template>
-    <UVerticalNavigation :links="links" class="border-r h-full py-2 bg-gray-100 fixed top-14 left-0 w-12">
-        <template #icon="{ link }">
-            <UTooltip :text="link.label" :popper="{ placement: 'right' }">
-                <UIcon :name="link.icon" class="flex-shrink-0 w-5 h-5 relative text-gray-700 dark:text-gray-200" />
+    <div
+        class="flex flex-col gap-2 text-gray-700 items-center border-r h-full py-2 bg-gray-100 fixed top-14 left-0 w-12">
+        <template v-for="(link, key) in links">
+            <UTooltip class="z-auto" :text="link.label" :popper="{ placement: 'right' }">
+                <ULink :to="link.to" active-class="text-white bg-blue-500"
+                    class="w-full hover:bg-gray-200 hover:text-gray-700 text-lg p-1 rounded-md flex items-center justify-center">
+                    <UAvatar v-if="link.img" :src="link.img" class="w-8 h-6 " alt="Avatar" size="xs" />
+                    <UIcon v-else :name="link.icon!" class="w-8 h-6"></UIcon>
+                </ULink>
             </UTooltip>
         </template>
-        <template #default="{ link }">
-            <span class="group-hover:text-primary relative"></span>
-        </template>
-    </UVerticalNavigation>
+
+    </div>
 </template>
 <script setup lang="ts">
 const links = [{
@@ -18,10 +21,10 @@ const links = [{
 }, {
     label: 'Vertical Navigation',
     icon: 'i-heroicons-chart-bar',
-    to: '#'
+    to: '/teste'
 }, {
     label: 'Command Palette',
-    icon: 'i-heroicons-command-line',
-    to: '/'
+    img: 'https://avatars.githubusercontent.com/u/739984?v=4',
+    to: '/teste'
 }]
 </script>
