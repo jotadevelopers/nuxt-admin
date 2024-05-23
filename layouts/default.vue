@@ -10,3 +10,6 @@
         <UNotifications />
     </div>
 </template>
+<script setup>
+useHead({title: 'Uno Admin Template'})
+</script>
