@@ -2,7 +2,7 @@ import type { DefineComponent } from "vue";
 
 export default defineAppConfig({
   ui: {
-    primary: "sky",
+    primary: "blue",
     icons: ["simple-icons"],
   },
   title: "Uno Admin",

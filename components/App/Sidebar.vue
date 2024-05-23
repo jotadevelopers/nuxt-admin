@@ -1,6 +1,6 @@
 <template>
     <div
-        class="flex flex-col gap-2 text-gray-700 items-center border-r h-full py-2 bg-gray-100 dark:bg-slate-800 dark:border-r-gray-700 fixed top-14 left-0 w-12">
+        class="flex flex-col gap-2 text-gray-700 items-center border-r h-full py-2 bg-gray-100 dark:bg-slate-800 dark:border-r-gray-700 fixed top-12 left-0 w-12">
         <template v-for="(link, key) in appConfig.sidebarMenuItems">
             <UTooltip class="z-auto" :text="link.label" :popper="{ placement: 'right' }">
                 <ULink :to="link.to" active-class="text-white bg-primary-500 dark:bg-slate-600"

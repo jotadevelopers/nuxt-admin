@@ -1,8 +1,8 @@
 <template>
-    <div class="w-full min-h-screen bg-gray-50 dark:bg-slate-700">
+    <div class="w-full min-h-screen bg-gray-50 dark:bg-slate-700" :class="`text-md`">
         <app-topbar class=""></app-topbar>
         <app-sidebar></app-sidebar>
-        <main class="pt-16 ml-12 p-2 min-h-screen">
+        <main class="pt-14 ml-12 p-2 min-h-screen">
             <slot />
         </main>
         <app-footer></app-footer>
@@ -12,4 +12,5 @@
 </template>
 <script setup>
 useHead({title: 'Uno Admin Template'})
+const appConfig = useAppConfig();
 </script>
