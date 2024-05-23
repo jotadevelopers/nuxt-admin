@@ -1,3 +1,5 @@
+import type { DefineComponent } from "vue";
+
 export default defineAppConfig({
   ui: {
     primary: "sky",
@@ -5,4 +7,5 @@ export default defineAppConfig({
   },
   title: "Uno Admin",
   sidebarMenuItems: <SidebarMenuItems[]>[],
+  toolbarActions: <unknown[]>[],
 });
