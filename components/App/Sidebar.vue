@@ -1,7 +1,7 @@
 <template>
     <div
         class="flex flex-col gap-2 text-gray-700 items-center border-r h-full py-2 bg-gray-100 dark:bg-slate-800 dark:border-r-gray-700 fixed top-14 left-0 w-12">
-        <template v-for="(link, key) in links">
+        <template v-for="(link, key) in appConfig.sidebarMenuItems">
             <UTooltip class="z-auto" :text="link.label" :popper="{ placement: 'right' }">
                 <ULink :to="link.to" active-class="text-white bg-primary-500 dark:bg-slate-600"
                     class="w-full hover:bg-gray-200 dark:hover:bg-slate-700 hover:text-gray-700 dark:hover:text-white text-lg p-1 rounded-md flex items-center justify-center">
@@ -10,21 +10,8 @@
                 </ULink>
             </UTooltip>
         </template>
-
     </div>
 </template>
 <script setup lang="ts">
-const links = [{
-    label: 'Installation',
-    icon: 'i-heroicons-home',
-    to: '/'
-}, {
-    label: 'Vertical Navigation',
-    icon: 'i-heroicons-chart-bar',
-    to: '/teste'
-}, {
-    label: 'Command Palette',
-    img: 'https://avatars.githubusercontent.com/u/739984?v=4',
-    to: '/teste'
-}]
+const appConfig = useAppConfig()
 </script>

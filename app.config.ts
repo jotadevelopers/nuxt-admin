@@ -3,4 +3,6 @@ export default defineAppConfig({
     primary: "sky",
     icons: ["simple-icons"],
   },
+  title: "Uno Admin",
+  sidebarMenuItems: <SidebarMenuItems[]>[],
 });
