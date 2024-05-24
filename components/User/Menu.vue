@@ -26,7 +26,7 @@ const items = reactive([
         label: 'Logout',
         icon: 'i-heroicons-arrow-left-on-rectangle',
         click: () => {
-
+            useRouter().push('/login');
         }
     }]
 ]);
@@ -35,10 +35,10 @@ const items = reactive([
 <template>
     <UDropdown :items="items" :ui="{ item: { disabled: 'cursor-text select-text' } }"
         :popper="{ placement: 'bottom-end' }">
-        <UAvatar :src="avatar" size="xs" class="mx-2 cursor-pointer"/>
+        <UAvatar :src="avatar" size="xs" class="mx-2 cursor-pointer" />
         <template #account="{ item }">
             <div class="flex gap-2">
-                <UAvatar :src="avatar" size="xs" class="mx-2 cursor-pointer bg-gray-500"/>
+                <UAvatar :src="avatar" size="xs" class="mx-2 cursor-pointer bg-gray-500" />
                 <p class="truncate font-medium text-gray-900 dark:text-white">{{ item.label }}</p>
             </div>
         </template>
