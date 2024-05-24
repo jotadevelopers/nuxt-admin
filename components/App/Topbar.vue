@@ -12,7 +12,7 @@ const appConfig = useAppConfig()
             <template v-for="component in appConfig.toolbarActions">
                 <component :is="component" />
             </template>
-            <img src="@/assets/user-avatar.png" alt="User Avatar" class="h-8 w-8 rounded-full ml-4" />
+            <UserMenu />
         </div>
     </header>
 </template>
