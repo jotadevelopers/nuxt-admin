@@ -16,4 +16,5 @@ export default defineNuxtPlugin((nuxtApp) => {
   appConfig.toolbarActions.push(GithubButton);
   appConfig.toolbarActions.push(ToggleDarkMode);
   appConfig.toolbarActions.push(ColorPicker);
+
 });
