@@ -1,9 +1,11 @@
 <template>
     <div class="w-full min-h-screen bg-gray-50 dark:bg-slate-700" :class="`text-md`">
-        <app-topbar class=""></app-topbar>
+        <app-topbar></app-topbar>
         <app-sidebar></app-sidebar>
-        <main class="pt-14 ml-12 p-2 min-h-screen">
-            <slot />
+        <main class="flex min-h-screen ml-12 pt-12 ">
+            <div class="w-full">
+                <slot />
+            </div>
         </main>
         <app-footer></app-footer>
         <USlideovers />
@@ -11,6 +13,6 @@
     </div>
 </template>
 <script setup>
-useHead({title: 'Uno Admin Template'})
+useHead({ title: 'Uno Admin Template' })
 const appConfig = useAppConfig();
 </script>
