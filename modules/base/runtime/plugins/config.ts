@@ -15,7 +15,7 @@ export default defineNuxtPlugin((nuxtApp) => {
   appConfig.sidebarMenuItems.push({
     label: "Pages",
     icon: "i-heroicons-document-duplicate-20-solid",
-    to: "/teste",
+    to: "/pages",
   });
 
   appConfig.toolbarActions.push(GithubButton);

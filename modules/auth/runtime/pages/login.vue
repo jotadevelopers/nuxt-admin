@@ -12,9 +12,7 @@ definePageMeta({
                 <p class="text-gray-400">Please sign-in to your account and start the adventure </p>
             </div>
 
-            <UAlert class="my-4" icon="i-heroicons-lock-closed-16-solid" color="primary" variant="soft"
-                title="Test credentials" description="Email: admin@unoadmin.com / Password: admin" />
-            <UForm class="space-y-4" @submit="() => $router.push('/')">
+            <UForm class="space-y-4 mt-4" @submit="() => $router.push('/')">
 
                 <UFormGroup label="Email" name="email">
                     <UInput />
