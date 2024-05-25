@@ -22,12 +22,12 @@ export default defineNuxtModule({
       pages.push({
         name: "pages",
         path: "/pages",
-        file: resolve("./runtime/pages/pages/index.vue"),
+        file: resolve("./runtime/pages/pages.vue"),
       });
       pages.push({
         name: "pages-error",
         path: "/pages/error",
-        file: resolve("./runtime/pages/pages/error.vue"),
+        file: resolve("./runtime/pages/error.vue"),
       });
     });
   },
