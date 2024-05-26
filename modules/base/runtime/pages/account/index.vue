@@ -1,12 +1,13 @@
 <template>
     <PageScaffold :nav-items="items">
-
+        <NuxtPage />
     </PageScaffold>
 </template>
 <script setup>
 const items = [{
     label: 'General',
-    icon: 'i-heroicons-user'
+    icon: 'i-heroicons-user',
+    to: '/pages/account/'
 }, {
     label: 'Security',
     icon: 'i-heroicons-lock-closed',

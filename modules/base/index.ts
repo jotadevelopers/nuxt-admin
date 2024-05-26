@@ -33,6 +33,13 @@ export default defineNuxtModule({
         name: "pages-account",
         path: "/pages/account",
         file: resolve("./runtime/pages/account/index.vue"),
+        children: [
+          {
+            name: "pages-account-general",
+            path: "",
+            file: resolve("./runtime/pages/account/general.vue")
+          }
+        ]
       });
     });
   },

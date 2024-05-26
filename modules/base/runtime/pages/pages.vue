@@ -4,7 +4,7 @@
             <nuxt-link :to="page.to" target="_blank">
                 <UCard>
                     <UIcon :name="page.icon" class="text-primary h-8 w-8"></UIcon>
-                    <h1 class="text-gray-800 font-medium text-lg">{{ page.title }}</h1>
+                    <h1 class="text-gray-800 dark:text-gray-500 font-medium text-lg">{{ page.title }}</h1>
                 </UCard>
             </nuxt-link>
 
