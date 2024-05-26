@@ -13,19 +13,23 @@
 </template>
 <script setup lang="ts">
 const pages = [{
-    title: 'Login',
+    title: 'Login Page',
     icon: 'i-heroicons-arrow-left-end-on-rectangle-16-solid',
     to: '/login'
 }, {
-    title: 'Register',
+    title: 'Register Page',
     icon: 'i-heroicons-user-plus-20-solid',
     to: '/register'
 }, {
-    title: 'Forgot Password',
+    title: 'Forgot Password Page',
     icon: 'i-heroicons-arrow-path-rounded-square-16-solid',
     to: '/forgot-password'
 }, {
-    title: 'Error',
+    title: 'Account Page',
+    icon: 'i-heroicons-user',
+    to: '/pages/account'
+}, {
+    title: 'Error 404 Page',
     icon: 'i-heroicons-exclamation-triangle-16-solid',
     to: '/pages/error'
 }]

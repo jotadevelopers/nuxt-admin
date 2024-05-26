@@ -29,6 +29,11 @@ export default defineNuxtModule({
         path: "/pages/error",
         file: resolve("./runtime/pages/error.vue"),
       });
+      pages.push({
+        name: "pages-account",
+        path: "/pages/account",
+        file: resolve("./runtime/pages/account/index.vue"),
+      });
     });
   },
 });
