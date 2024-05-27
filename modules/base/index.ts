@@ -38,6 +38,11 @@ export default defineNuxtModule({
             name: "pages-account-general",
             path: "",
             file: resolve("./runtime/pages/account/general.vue")
+          },
+          {
+            name: "pages-account-general",
+            path: "security",
+            file: resolve("./runtime/pages/account/security.vue")
           }
         ]
       });

@@ -1,4 +1,3 @@
-,
 <script setup>
 const toast = useToast();
 const deactivateConfirm = ref(false);
