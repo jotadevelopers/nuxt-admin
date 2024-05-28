@@ -26,7 +26,8 @@ application you desire, such as:
 ```bash
 git clone https://github.com/jotadevelopers/uno-admin.git
 ```
-2. Access the created directory 
+
+2. Access the created directory
 
 ```bash
 cd uno-admin
@@ -53,13 +54,34 @@ npm run dev
 
 ## What's Included
 
+- Dashboard
+- Pages
+  - Login
+  - Register
+  - Error
+  - Forget Password
+- Account Settings
+- Icons from Iconify using https://icones.js.org
+- Components from https://ui.nuxt.com/components
+
 ## Premium Version
 
 ## Documentation
 
-## Browser Support
-
 ## Contributing
+
+Contributions are always welcome and recommended! Here is how:
+
+- Fork the repository ([here is the guide](https://docs.github.com/en/get-started/quickstart/fork-a-repo)).
+- Clone to your machine `git clone https://github.com/YOUR_USERNAME/REPO_NAME` Make your changes
+- Create a pull request
+
+### Contribution Requirements 🧰
+
+- When you contribute, you agree to give a non-exclusive license to Uno Admin team to use that contribution in any context as we see appropriate.
+- If you use content provided by another party, it must be appropriately licensed using an open-source license.
+- Contributions are only accepted through Github pull requests.
+- Finally, the contributed code must work in all supported browsers.
 
 ## Change Logs
 
@@ -68,3 +90,7 @@ npm run dev
 ## License
 
 ## Useful Links
+
+* [Vue 3](https://themeselection.com/item/category/freebies/)
+* [Nuxt](https://ui.nuxt.com)
+* [Nuxt UI](https://ui.nuxt.com)
