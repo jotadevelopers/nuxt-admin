@@ -43,6 +43,11 @@ export default defineNuxtModule({
             path: "security",
             file: resolve("./runtime/pages/account/security.vue"),
           },
+          {
+            name: "pages-account-notifications",
+            path: "notifications",
+            file: resolve("./runtime/pages/account/notifications.vue"),
+          },
         ],
       });
     });

@@ -16,5 +16,6 @@ const items = [{
 }, {
     label: 'Notifications',
     icon: 'i-heroicons-bell-alert',
+    to: '/pages/account/notifications',
 }]
 </script>
