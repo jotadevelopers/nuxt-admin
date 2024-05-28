@@ -26,13 +26,13 @@ const permissions = [
         <p class="text-sm text-gray-500 font-medium mb-4">We need permission from your browser to show notifications. </p>
         <UTable :columns="columns" :rows="permissions">
             <template #email-data="{ row }">
-                <UCheckbox v-model="row.email" :name="row.email" />
+                <UCheckbox v-model="row.email" name="email" />
             </template>
             <template #browser-data="{ row }">
-                <UCheckbox v-model="row.browser" :name="row.embrowserail" />
+                <UCheckbox v-model="row.browser" name="browser" />
             </template>
             <template #app-data="{ row }">
-                <UCheckbox v-model="row.app" :name="row.app" />
+                <UCheckbox v-model="row.app" name="app" />
             </template>
         </UTable>
         <div class="space-y-4 mt-4">

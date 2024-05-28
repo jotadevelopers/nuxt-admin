@@ -22,13 +22,15 @@ const colorMode = useColorMode()
 
 const primaryColors = computed(() => appConfig.ui.colors.filter(color => color !== 'primary').map(color => ({ value: color, text: color, hex: colors[color][colorMode.value === 'dark' ? 400 : 500] })))
 const primary = computed({
-    get() {
-        return primaryColors.value.find(option => option.value === appConfig.ui.primary)
-    },
-    set(option) {
-        appConfig.ui.primary = option.value
-        window.localStorage.setItem('nuxt-ui-primary', appConfig.ui.primary)
-    }
+  get () {
+    return primaryColors.value.find(option => option.value === appConfig.ui.primary)
+  },
+  set (option) {
+    appConfig.ui.primary = option.value
+
+    window.localStorage.setItem('nuxt-ui-primary', appConfig.ui.primary)
+  }
 })
+
 
 </script>

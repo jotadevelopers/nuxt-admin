@@ -10,7 +10,7 @@
         <UNotifications />
     </div>
 </template>
-<script setup>
+<script setup lang="ts">
 useHead({ title: 'Uno Admin Template' })
-const appConfig = useAppConfig();
+
 </script>

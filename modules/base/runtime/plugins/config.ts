@@ -3,10 +3,7 @@ import ColorPicker from "../components/ColorPicker.vue";
 import GithubButton from "../components/GithubButton.vue";
 export default defineNuxtPlugin((nuxtApp) => {
   const appConfig = useAppConfig();
-  if (import.meta.client) {
-    appConfig.ui.primary =
-      window.localStorage.getItem("nuxt-ui-primary") || appConfig.ui.primary;
-  }
+
   appConfig.sidebarMenuItems.push({
     label: "Home",
     icon: "i-heroicons-home",

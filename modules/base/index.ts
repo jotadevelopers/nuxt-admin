@@ -12,6 +12,7 @@ export default defineNuxtModule({
   setup(_options, _nuxt) {
     const { resolve } = createResolver(import.meta.url);
     addPlugin(resolve("./runtime/plugins/config.ts"));
+    addPlugin(resolve("./runtime/plugins/ui.ts"));
     extendPages((pages) => {
       pages.push({
         name: "get-started",

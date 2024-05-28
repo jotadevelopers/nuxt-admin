@@ -1,5 +1,6 @@
 <template>
     <PageScaffold :nav-items="items">
+        <template #left> <UVerticalNavigation :links="items" /></template>
         <NuxtPage />
     </PageScaffold>
 </template>
