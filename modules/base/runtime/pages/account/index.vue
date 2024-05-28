@@ -7,9 +7,11 @@
 const items = [{
     label: 'General',
     icon: 'i-heroicons-user',
-    to: '/pages/account/'
+    to: '/pages/account/',
+    exact: true
 }, {
     label: 'Security',
+    to: '/pages/account/security',
     icon: 'i-heroicons-lock-closed',
 }, {
     label: 'Notifications',

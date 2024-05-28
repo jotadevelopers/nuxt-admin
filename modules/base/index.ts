@@ -1,4 +1,3 @@
-import defu from "defu";
 import {
   addPlugin,
   createResolver,
@@ -37,14 +36,14 @@ export default defineNuxtModule({
           {
             name: "pages-account-general",
             path: "",
-            file: resolve("./runtime/pages/account/general.vue")
+            file: resolve("./runtime/pages/account/general.vue"),
           },
           {
-            name: "pages-account-general",
+            name: "pages-account-security",
             path: "security",
-            file: resolve("./runtime/pages/account/security.vue")
-          }
-        ]
+            file: resolve("./runtime/pages/account/security.vue"),
+          },
+        ],
       });
     });
   },
