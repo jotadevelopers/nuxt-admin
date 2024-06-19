@@ -1,23 +1,16 @@
 <template>
-    <UCard>
-        <template #header>
-            <h1 class="text-primary">Wellcome to Nuxt Admin - A Free modular admin template</h1>
-        </template>
-        <div class="space-y-4">
-            <p>If you are a developer looking for a Nuxt UI-based admin template that is developer-friendly, modular,
-                feature-rich,
-                and highly customizable, the Uno Admin Template is the ideal choice. Its flexibility will allow you to
-                create any
-                application you desire, such as:</p>
-            <ul class="list-disc ml-6 text-primary">
-                <li>SaaS platforms</li>
-                <li>Project management apps</li>
-                <li>eCommerce backends</li>
-                <li>CRM systems</li>
-                <li>Educational apps</li>
-                <li>& many more…</li>
-            </ul>
-        </div>
+    <div class="p-2 h-screen flex flex-col items-center ">
+        <UCard>
+            <div class="space-y-4 text-center">
+                <img src="@/assets/logo.png" alt="Logo" class="mx-auto h-16 dark:bg-gray-600 dark:rounded-full" />
+                <h1 class="text-primary text-3xl">Wellcome to Nuxt Admin</h1>
+                <p class="font-medium text-slate-600">A Free modular admin template based on NuxtJs and Nuxt UI,
+                    carefully crafted and
+                    ready for production
+                </p>
+                <UButton to="/dashboard">Access Dashboard</UButton>
+            </div>
+        </UCard>
+    </div>
 
-    </UCard>
 </template>
