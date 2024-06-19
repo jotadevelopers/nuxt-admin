@@ -16,10 +16,10 @@ const leftOpen = ref(true);
             <UHorizontalNavigation :links="props.navItems" />
         </div>
         <div class="flex flex-row ">
-            <div v-if="$slots.left" v-show="leftOpen" class="w-[220px] p-1">
+            <div v-if="$slots.left" v-show="leftOpen" class="w-[220px] p-2 fixed">
                 <slot name="left" />
             </div>
-            <div class="w-full p-2">
+            <div class="w-full p-2" :class="{ 'ml-[220px]': leftOpen }">
                 <slot />
             </div>
         </div>

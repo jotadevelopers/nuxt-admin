@@ -14,6 +14,11 @@ export default defineNuxtPlugin((nuxtApp) => {
     icon: "i-heroicons-document-duplicate-20-solid",
     to: "/pages",
   });
+  appConfig.sidebarMenuItems.push({
+    label: "Components",
+    icon: "i-heroicons-rectangle-group-solid",
+    to: "/components/form-elements",
+  });
 
   appConfig.toolbarActions.push(GithubButton);
   appConfig.toolbarActions.push(ToggleDarkMode);

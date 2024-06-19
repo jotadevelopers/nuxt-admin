@@ -51,6 +51,18 @@ export default defineNuxtModule({
           },
         ],
       });
+      pages.push({
+        name: "components",
+        path: "/components",
+        file: resolve("./runtime/pages/components/index.vue"),
+        children: [
+          {
+            name: "components-form-elements",
+            path: "form-elements",
+            file: resolve("./runtime/pages/components/form-elements.vue"),
+          },
+        ],
+      });
     });
   },
 });
