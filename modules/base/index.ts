@@ -15,9 +15,9 @@ export default defineNuxtModule({
     addPlugin(resolve("./runtime/plugins/ui.ts"));
     extendPages((pages) => {
       pages.push({
-        name: "get-started",
-        path: "/get-started",
-        file: resolve("./runtime/pages/get-started.vue"),
+        name: "dashboard",
+        path: "/dashboard",
+        file: resolve("./runtime/pages/dashboard.vue"),
       });
       pages.push({
         name: "pages",

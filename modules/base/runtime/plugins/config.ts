@@ -10,6 +10,11 @@ export default defineNuxtPlugin((nuxtApp) => {
     to: "/",
   });
   appConfig.sidebarMenuItems.push({
+    label: "Dashboard",
+    icon: "i-heroicons-cube-transparent-solid",
+    to: "/dashboard",
+  });
+  appConfig.sidebarMenuItems.push({
     label: "Pages",
     icon: "i-heroicons-document-duplicate-20-solid",
     to: "/pages",
