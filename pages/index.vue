@@ -8,7 +8,15 @@
                     carefully crafted and
                     ready for production
                 </p>
-                <UButton to="/dashboard">Access Dashboard</UButton>
+                <div class="flex flex-row gap-4 items-center justify-center">
+                    <span class="flex flex-col items-center justify-center shadow-md font-medium border p-2 rounded-md">
+                        <img src="@/assets/nuxt-icon.svg" class="h-16" /> Nuxt 3 + Nuxt UI</span>
+                    <span class="flex flex-col items-center justify-center shadow-md font-medium border p-2 rounded-md">
+                        <img src="@/assets/js-icon.png" class="h-16" /> Javascript</span>
+                    <span class="flex flex-col items-center justify-center shadow-md font-medium border p-2 rounded-md">
+                        <img src="@/assets/typescript-icon.png" class="h-16" /> Typescript</span>
+                </div>
+                <UButton size="xl" to="/dashboard">Access Dashboard</UButton>
             </div>
         </UCard>
     </div>

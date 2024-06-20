@@ -61,6 +61,11 @@ export default defineNuxtModule({
             path: "form-elements",
             file: resolve("./runtime/pages/components/form-elements.vue"),
           },
+          {
+            name: "components-icons",
+            path: "icons",
+            file: resolve("./runtime/pages/components/icons.vue"),
+          },
         ],
       });
     });
