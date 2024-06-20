@@ -11,23 +11,18 @@ const items = reactive([
             disabled: true
         }],
     [{
-        label: 'Profile',
+        label: 'Account',
         icon: 'i-heroicons-user-circle',
-        click: () => {
-
-        }
+        to: '/pages/account/',
+        exact: true
     }, {
-        label: 'Password',
+        label: 'Security',
         icon: 'i-heroicons-lock-closed-16-solid',
-        click: () => {
-
-        }
+        to: '/pages/account/security'
     }], [{
         label: 'Logout',
         icon: 'i-heroicons-arrow-left-on-rectangle',
-        click: () => {
-            useRouter().push('/login');
-        }
+        to: '/login'
     }]
 ]);
 </script>
