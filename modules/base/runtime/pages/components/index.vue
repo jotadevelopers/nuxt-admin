@@ -6,6 +6,14 @@ const links = [{
 {
     label: 'Icons',
     to: '/components/icons'
+},
+{
+    label: 'Menu',
+    to: '/components/menu'
+},
+{
+    label: 'All Nuxt UI Components',
+    to: 'https://ui.nuxt.com/components/',
 }]
 </script>
 <template>

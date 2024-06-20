@@ -66,6 +66,11 @@ export default defineNuxtModule({
             path: "icons",
             file: resolve("./runtime/pages/components/icons.vue"),
           },
+          {
+            name: "components-menu",
+            path: "menu",
+            file: resolve("./runtime/pages/components/menu.vue"),
+          },
         ],
       });
     });
