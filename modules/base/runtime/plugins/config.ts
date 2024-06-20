@@ -1,5 +1,3 @@
-import ToggleDarkMode from "../components/ToggleDarkMode.vue";
-import ColorPicker from "../components/ColorPicker.vue";
 import GithubButton from "../components/GithubButton.vue";
 export default defineNuxtPlugin((nuxtApp) => {
   const appConfig = useAppConfig();
@@ -26,6 +24,4 @@ export default defineNuxtPlugin((nuxtApp) => {
   });
 
   appConfig.toolbarActions.push(GithubButton);
-  appConfig.toolbarActions.push(ToggleDarkMode);
-  appConfig.toolbarActions.push(ColorPicker);
 });

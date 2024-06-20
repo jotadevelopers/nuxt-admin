@@ -9,6 +9,8 @@ const appConfig = useAppConfig()
             <h1 class="font-medium">{{ appConfig.title }}</h1>
         </div>
         <div class="flex items-center gap-1 px-2">
+            <AppToggleDarkMode v-if="appConfig.toggleDarkMode" />
+            <AppColorPicker v-if="appConfig.colorPicker" />
             <template v-for="component in appConfig.toolbarActions">
                 <component :is="component" />
             </template>
