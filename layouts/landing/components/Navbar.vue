@@ -1,7 +1,8 @@
 <script setup>
+const mobileMenuOpen = ref(false);
 const links = [
     { label: 'Home', to: '/' },
-    { label: 'Documentation', to: 'https://uno-admin.vercel.app/docs', target: '_blank' }
+    { label: 'Documentation', to: '/https://uno-admin.vercel.app/docs' }
 ]
 </script>
 <template>
@@ -11,7 +12,8 @@ const links = [
             <div class="lg:flex-1 flex items-center gap-1.5">
                 <ULink to="/" class="flex items-center">
                     <img src="@/assets/logo.png" class="h-6 mr-3 sm:h-9" alt="Uno Admin Logo">
-                    <span class="self-center text-xl font-semibold whitespace-nowrap text-primary dark:text-white">Uno
+                    <span
+                        class="self-center hidden md:block text-xl font-semibold whitespace-nowrap text-primary dark:text-white">Uno
                         Admin</span>
                 </ULink>
             </div>
@@ -26,12 +28,26 @@ const links = [
             <div class="flex items-center justify-end lg:flex-1 gap-1.5">
                 <UButton target="_blank" to="https://github.com/jotadevelopers/uno-admin" icon="i-heroicons-star"
                     variant="outline" color="purple">Star on Github</UButton>
-                <UButton to="/login" icon="i-heroicons-arrow-left-on-rectangle" color="primary">Login
+                <UButton icon="i-heroicons-bars-3-20-solid" class="md:hidden" variant="ghost" color="gray"
+                    @click="mobileMenuOpen = !mobileMenuOpen">
                 </UButton>
             </div>
         </div>
     </header>
-
+    <USlideover v-model="mobileMenuOpen" side="left">
+        <div class="flex items-center justify-end">
+            <UIcon name="i-heroicons-x-mark-16-solid" @click="mobileMenuOpen = false" class="cursor-pointer m-4">
+            </UIcon>
+        </div>
+        <div class="px-2">
+            <UVerticalNavigation :links>
+                <template #default="{ link }">
+                    <span class="group-hover:text-primary relative w-full" @click="mobileMenuOpen = false">{{ link.label
+                        }}</span>
+                </template>
+            </UVerticalNavigation>
+        </div>
+    </USlideover>
 </template>
 <style scoped>
 header {

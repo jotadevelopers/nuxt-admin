@@ -12,7 +12,7 @@ definePageMeta({ layout: 'landing' });
                 <h2 class="text-4xl font-extrabold mx-auto md:text-5xl"> Build your Application with the best </h2>
                 <p class="max-w-2xl mx-auto"> Best opensource admin template. Built on top of Nuxtjs and Nuxt UI, Its
                     flexibility, developer-friendly, modular, feature-rich, and highly customizable.. </p>
-                <div class="items-center justify-center gap-x-3 space-y-3 sm:flex sm:space-y-0">
+                <div class="items-center justify-center gap-3 flex">
                     <UButton to="/dashboard" size="lg">Get Started</UButton>
                     <UButton icon="i-heroicons-star" target="_blank" to="https://uno-admin.vercel.app" size="lg"
                         variant="outline" color="yellow">Get Pro
