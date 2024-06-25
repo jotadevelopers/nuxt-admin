@@ -9,9 +9,9 @@ const leftOpen = ref(true);
 <template>
     <div>
         <div v-if="$slots.left || props.navItems?.length"
-            class="w-full h-12 bg-white dark:bg-slate-800 sticky top-12 flex flex-row gap-2 border-b dark:border-b-gray-600 z-10">
-            <UButton v-if="$slots.left" class="my-2" @click="() => leftOpen = !leftOpen"
-                icon="i-heroicons-bars-3-16-solid" size="xs" variant="link">
+            class="w-full h-12 sticky top-0 flex flex-row gap-2 border-b bg-white dark:bg-zinc-900 dark:border-b-gray-600 z-10">
+            <UButton v-if="$slots.left" class="my-2 " @click="() => leftOpen = !leftOpen"
+                icon="i-heroicons-bars-3-16-solid" size="xs" variant="link" color="gray">
             </UButton>
             <UHorizontalNavigation :links="props.navItems" />
         </div>
