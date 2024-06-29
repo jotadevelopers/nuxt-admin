@@ -1,4 +1,4 @@
-import GithubButton from "../components/GithubButton.vue";
+import GithubButton from "../components/App/GithubButton.vue";
 export default defineNuxtPlugin((nuxtApp) => {
   const appConfig = useAppConfig();
 

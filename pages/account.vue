@@ -7,15 +7,15 @@
 const items = [{
     label: 'General',
     icon: 'i-heroicons-user',
-    to: '/pages/account/',
+    to: '/account/',
     exact: true
 }, {
     label: 'Security',
-    to: '/pages/account/security',
+    to: '/account/security',
     icon: 'i-heroicons-lock-closed',
 }, {
     label: 'Notifications',
     icon: 'i-heroicons-bell-alert',
-    to: '/pages/account/notifications',
+    to: '/account/notifications',
 }]
 </script>

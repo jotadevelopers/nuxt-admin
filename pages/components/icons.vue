@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-wrap gap-4 p-2">
+  <div class="flex flex-wrap gap-4 p-2 justify-center">
     <UAvatar icon="i-heroicons-photo" size="3xl" class="bg-white shadow-lg" />
     <UAvatar icon="i-heroicons-chat-bubble-oval-left" size="3xl" class="bg-white shadow-lg" />
     <UAvatar icon="i-heroicons-arrow-down-circle-16-solid" size="3xl" class="bg-white shadow-lg" />

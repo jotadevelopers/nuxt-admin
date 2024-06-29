@@ -4,7 +4,6 @@ const deactivateConfirm = ref(false);
 const countries = ['United States', 'Canada', 'Mexico']
 const language = ['English', 'Spanish', 'Arabic', 'Portuguese']
 const formSubmit = () => {
-    console.log('teste')
     toast.add({ title: 'Saved successfully' })
 }
 </script>

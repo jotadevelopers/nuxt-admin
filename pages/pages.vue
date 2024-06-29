@@ -1,5 +1,5 @@
 <template>
-    <div class="grid grid-cols-3 gap-2 p-2">
+    <div class="grid md:grid-cols-3 gap-2 p-2">
         <template v-for="page in pages">
             <nuxt-link :to="page.to" target="_blank">
                 <UCard>
@@ -27,10 +27,10 @@ const pages = [{
 }, {
     title: 'Account Page',
     icon: 'i-heroicons-user',
-    to: '/pages/account'
+    to: '/account'
 }, {
     title: 'Error 404 Page',
     icon: 'i-heroicons-exclamation-triangle-16-solid',
-    to: '/pages/error'
+    to: '/error'
 }]
 </script>

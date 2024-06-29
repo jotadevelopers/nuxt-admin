@@ -13,12 +13,12 @@ const items = reactive([
     [{
         label: 'Account',
         icon: 'i-heroicons-user-circle',
-        to: '/pages/account/',
+        to: '/account/',
         exact: true
     }, {
         label: 'Security',
         icon: 'i-heroicons-lock-closed-16-solid',
-        to: '/pages/account/security'
+        to: '/account/security'
     }], [{
         label: 'Logout',
         icon: 'i-heroicons-arrow-left-on-rectangle',
