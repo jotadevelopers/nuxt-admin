@@ -64,10 +64,6 @@ npm run dev
 - Icons from Iconify using https://icones.js.org
 - Components from https://ui.nuxt.com/components
 
-## Premium Version
-
-## Documentation
-
 ## Contributing
 
 Contributions are always welcome and recommended! Here is how:
@@ -83,14 +79,8 @@ Contributions are always welcome and recommended! Here is how:
 - Contributions are only accepted through Github pull requests.
 - Finally, the contributed code must work in all supported browsers.
 
-## Change Logs
-
-## Support
-
-## License
-
 ## Useful Links
 
-* [Vue 3](https://themeselection.com/item/category/freebies/)
-* [Nuxt](https://ui.nuxt.com)
-* [Nuxt UI](https://ui.nuxt.com)
+- [Vue 3](https://themeselection.com/item/category/freebies/)
+- [Nuxt](https://ui.nuxt.com)
+- [Nuxt UI](https://ui.nuxt.com)
