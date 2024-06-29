@@ -1,8 +1,9 @@
 <script setup>
+
 const mobileMenuOpen = ref(false);
 const links = [
     { label: 'Home', to: '/' },
-    { label: 'Documentation', to: '/https://uno-admin.vercel.app/docs' }
+    { label: 'Documentation', to: 'https://uno-admin.vercel.app/docs' }
 ]
 </script>
 <template>

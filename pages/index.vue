@@ -22,8 +22,8 @@ definePageMeta({ layout: 'landing' });
                     </UButton>
                 </div>
             </div>
-            <div class="mt-14"><img src="https://uno-admin.vercel.app/_nuxt/dashboard.yvWZcc65.png"
-                    class="w-full shadow-lg rounded-lg border dark:invert" alt=""></div>
+            <div class="mt-14"><img src="~/assets/dashboard.png" class="w-full shadow-lg rounded-lg border dark:invert"
+                    alt=""></div>
         </div>
     </section>
     <section class="py-14">
