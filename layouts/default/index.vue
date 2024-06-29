@@ -5,7 +5,10 @@
                 <div class="w-14 h-full flex flex-col text-gray-400">
                     <div
                         class="flex items-center justify-center max-h-14 min-h-14 bg-primary-600 dark:bg-transparent dark:border-b border-gray-600">
-                        <img src="@/assets/logo.png" alt="Logo" class="h-8 w-8 dark:bg-primary-600 dark:rounded-full" />
+                        <NuxtLink to="/">
+                            <img src="@/assets/logo.png" alt="Logo"
+                                class="h-8 w-8 dark:bg-primary-600 dark:rounded-full" />
+                        </NuxtLink>
                     </div>
                     <Sidebar />
                 </div>
